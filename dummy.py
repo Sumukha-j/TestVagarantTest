@@ -22,13 +22,6 @@ def total_AMT(basket):
     total_amount = sum(product.total_price() for product in basket)
     return total_amount
 
-leather_wallet = Product("Leather Wallet", 1100, 18, 1)
-umbrella = Product("Umbrella", 900, 12, 4)
-cigarette = Product("Cigarette", 200, 28, 3)
-honey = Product("Honey", 100, 0, 2)
-
-basket = [leather_wallet, umbrella, cigarette, honey]
-
 max_gst_product = max_GST(basket)
 print(f"Max GST amt product is: {max_gst_product.name}")
 
